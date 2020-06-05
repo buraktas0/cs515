@@ -5,16 +5,53 @@
 <h1>CS515 Experiment</h1>
 <h2>Studying the effect of voice or text-based interaction</h2>
 
-<a href="Smartphone-Text.html" target="_blank">Test 1</a>
+
+<button class="buttons" id="btPreSurvey" type="button" onclick="openPage('https://docs.google.com/forms/d/e/1FAIpQLSe4KyfRvVX7mpCQehVB7_NGcix90Q749iYa9k6s6cD1KgJLJA/viewform?usp=sf_link','btTest1')">Pre-Survey</button>
 <br>
-<a href="">Survey 1</a>
+<button class="buttons" id="btTest1" type="button" disabled onclick="openPage('Smartphone-Text.html','btSurvey1')">Test 1</button>
 <br>
-<a href="Smartphone-Voice.html" target="_blank">Test 2</a>
+<button class="buttons" id="btSurvey1" type="button" disabled onclick="openPage('Survey1.html','btTest2')">Survey 1</button>
 <br>
-<a href="">Survey 2</a>
+<button class="buttons" id="btTest2" type="button" disabled onclick="openPage('Smartphone-Voice.html','btSurvey2')">Test 2</button>
 <br>
+<button class="buttons" id="btSurvey2" type="button" disabled onclick="openPage('Smartphone-Voice.html','')">Survey 2</button>
+<br>
+
 
 <p>Hosted with GitHub Pages.</p>
 </center
 </body>
+
+ <head>
+<style>
+button.buttons {
+width: 200px;
+padding: 20px;
+cursor: pointer;
+font-weight: bold;
+font-size: 100%;
+background: #3366cc;
+color: #fff;
+border: 1px solid #3366cc;
+border-radius: 10px;   
+margin: 5px;
+}
+button.buttons:hover {
+color: #fff;
+background: #5c81cb;
+border: 1px solid #fff;
+}
+button.buttons:disabled {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+</style> 
+<script>
+ function openPage(path, buttonName) {
+  window.open(path,'blank')
+  document.getElementById(buttonName).disabled = false;
+} 
+</script>
+</head> 
 </html>
