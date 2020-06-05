@@ -10,11 +10,11 @@
 <br>
 <button class="buttons" id="btTest1" type="button" disabled onclick="openPage('Smartphone-Text.html','btSurvey1')">Test 1</button>
 <br>
-<button class="buttons" id="btSurvey1" type="button" disabled onclick="openPage('Survey1.html','btTest2')">Survey 1</button>
+<button class="buttons" id="btSurvey1" type="button" disabled onclick="openPage('https://docs.google.com/forms/d/e/1FAIpQLSeHiop1bHLsFlesAsICvLjNADtfhst3OdozEPLJjXD2yAgdjw/viewform?usp=sf_link','btTest2')">Survey 1</button>
 <br>
 <button class="buttons" id="btTest2" type="button" disabled onclick="openPage('Smartphone-Voice.html','btSurvey2')">Test 2</button>
 <br>
-<button class="buttons" id="btSurvey2" type="button" disabled onclick="openPage('Smartphone-Voice.html','')">Survey 2</button>
+<button class="buttons" id="btSurvey2" type="button" disabled onclick="openPage('https://docs.google.com/forms/d/e/1FAIpQLSfxVYCww4RE1P5VOgrMDq5cPE2tOEsszGyy2aqds_N-v-xhuA/viewform?usp=sf_link','')">Survey 2</button>
 <br>
 
 
@@ -49,7 +49,7 @@ button.buttons:disabled {
 </style> 
 <script>
  function openPage(path, buttonName) {
-  window.open(path,'blank')
+  window.open(path,'_blank')
   document.getElementById(buttonName).disabled = false;
 } 
 </script>
